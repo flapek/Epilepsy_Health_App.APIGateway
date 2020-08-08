@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epilepsy_Health_App.APIGateway.API", "Epilepsy_Health_App.APIGateway.API\Epilepsy_Health_App.APIGateway.API.csproj", "{0FFAD5DB-3A2E-4391-A4BD-A44076B43781}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Epilepsy_Health_App.APIGateway.API", "Epilepsy_Health_App.APIGateway.API\Epilepsy_Health_App.APIGateway.API.csproj", "{0FFAD5DB-3A2E-4391-A4BD-A44076B43781}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epilepsy_Health_App.APIGateway.Application", "Epilepsy_Health_App.APIGateway.Application\Epilepsy_Health_App.APIGateway.Application.csproj", "{AFAAE0A7-F154-477A-81A0-28B927934243}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epilepsy_Health_App.APIGateway.Core", "Epilepsy_Health_App.APIGateway.Core\Epilepsy_Health_App.APIGateway.Core.csproj", "{8415F7F4-0B37-4A14-98B0-DDF84D783A4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epilepsy_Health_App.APIGateway.Infrastructure", "Epilepsy_Health_App.APIGateway.Infrastructure\Epilepsy_Health_App.APIGateway.Infrastructure.csproj", "{312908BC-0DDF-479B-9E17-9F4D6262E3B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{0FFAD5DB-3A2E-4391-A4BD-A44076B43781}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FFAD5DB-3A2E-4391-A4BD-A44076B43781}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FFAD5DB-3A2E-4391-A4BD-A44076B43781}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFAAE0A7-F154-477A-81A0-28B927934243}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFAAE0A7-F154-477A-81A0-28B927934243}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFAAE0A7-F154-477A-81A0-28B927934243}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFAAE0A7-F154-477A-81A0-28B927934243}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8415F7F4-0B37-4A14-98B0-DDF84D783A4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8415F7F4-0B37-4A14-98B0-DDF84D783A4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8415F7F4-0B37-4A14-98B0-DDF84D783A4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8415F7F4-0B37-4A14-98B0-DDF84D783A4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{312908BC-0DDF-479B-9E17-9F4D6262E3B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{312908BC-0DDF-479B-9E17-9F4D6262E3B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{312908BC-0DDF-479B-9E17-9F4D6262E3B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{312908BC-0DDF-479B-9E17-9F4D6262E3B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
