@@ -1,7 +1,7 @@
 Set-Location ..
 
 Write-Host "Start docker build..."
-$result = docker build -t services_rapi .
+$result = docker build -t services.epilepsy_health_app.apigateway .
 
 if ($LASTEXITCODE -eq 0) {
     Write-Host "Finish success" -ForegroundColor Green
