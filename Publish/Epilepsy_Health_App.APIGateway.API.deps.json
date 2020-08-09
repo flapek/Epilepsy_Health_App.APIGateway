@@ -24,6 +24,9 @@
     ".NETCoreApp,Version=v3.1": {
       "Epilepsy_Health_App.APIGateway.API/1.0.0": {
         "dependencies": {
+          "Epilepsy_Health_App.APIGateway.Application": "1.0.0",
+          "Epilepsy_Health_App.APIGateway.Core": "1.0.0",
+          "Epilepsy_Health_App.APIGateway.Infrastructure": "1.0.0",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.10.9",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
@@ -1722,11 +1725,36 @@
           "WindowsBase.dll": {}
         }
       },
-      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.10.9": {}
+      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.10.9": {},
+      "Epilepsy_Health_App.APIGateway.Application/1.0.0": {
+        "dependencies": {
+          "Epilepsy_Health_App.APIGateway.Core": "1.0.0"
+        },
+        "compile": {
+          "Epilepsy_Health_App.APIGateway.Application.dll": {}
+        }
+      },
+      "Epilepsy_Health_App.APIGateway.Core/1.0.0": {
+        "compile": {
+          "Epilepsy_Health_App.APIGateway.Core.dll": {}
+        }
+      },
+      "Epilepsy_Health_App.APIGateway.Infrastructure/1.0.0": {
+        "dependencies": {
+          "Epilepsy_Health_App.APIGateway.Application": "1.0.0",
+          "Epilepsy_Health_App.APIGateway.Core": "1.0.0"
+        },
+        "compile": {
+          "Epilepsy_Health_App.APIGateway.Infrastructure.dll": {}
+        }
+      }
     },
     ".NETCoreApp,Version=v3.1/linux-x64": {
       "Epilepsy_Health_App.APIGateway.API/1.0.0": {
         "dependencies": {
+          "Epilepsy_Health_App.APIGateway.Application": "1.0.0",
+          "Epilepsy_Health_App.APIGateway.Core": "1.0.0",
+          "Epilepsy_Health_App.APIGateway.Infrastructure": "1.0.0",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.10.9",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
@@ -3270,7 +3298,29 @@
           }
         }
       },
-      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.10.9": {}
+      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.10.9": {},
+      "Epilepsy_Health_App.APIGateway.Application/1.0.0": {
+        "dependencies": {
+          "Epilepsy_Health_App.APIGateway.Core": "1.0.0"
+        },
+        "runtime": {
+          "Epilepsy_Health_App.APIGateway.Application.dll": {}
+        }
+      },
+      "Epilepsy_Health_App.APIGateway.Core/1.0.0": {
+        "runtime": {
+          "Epilepsy_Health_App.APIGateway.Core.dll": {}
+        }
+      },
+      "Epilepsy_Health_App.APIGateway.Infrastructure/1.0.0": {
+        "dependencies": {
+          "Epilepsy_Health_App.APIGateway.Application": "1.0.0",
+          "Epilepsy_Health_App.APIGateway.Core": "1.0.0"
+        },
+        "runtime": {
+          "Epilepsy_Health_App.APIGateway.Infrastructure.dll": {}
+        }
+      }
     }
   },
   "libraries": {
@@ -3295,6 +3345,21 @@
       "sha512": "sha512-Sug+YeP9YYigFnUdvPCUJjBz7cc2VVR7UBZkIRwPWmVR/HmIM5HbcpX940s4BM3xgL3QHGp3qN7AqkcZ/MjZEw==",
       "path": "microsoft.visualstudio.azure.containers.tools.targets/1.10.9",
       "hashPath": "microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512"
+    },
+    "Epilepsy_Health_App.APIGateway.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Epilepsy_Health_App.APIGateway.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Epilepsy_Health_App.APIGateway.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
       "type": "referenceassembly",
