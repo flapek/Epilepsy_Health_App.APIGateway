@@ -14,9 +14,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\Epilepsy_Health_App.APIGateway.API\Epilepsy_Health_App.APIGateway.API.csproj" />
-    <ProjectReference Include="..\..\src\Epilepsy_Health_App.APIGateway.Application\Epilepsy_Health_App.APIGateway.Application.csproj" />
-    <ProjectReference Include="..\..\src\Epilepsy_Health_App.APIGateway.Core\Epilepsy_Health_App.APIGateway.Core.csproj" />
-    <ProjectReference Include="..\..\src\Epilepsy_Health_App.APIGateway.Infrastructure\Epilepsy_Health_App.APIGateway.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
