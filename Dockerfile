@@ -3,4 +3,4 @@ WORKDIR /app
 COPY Publish .
 ENV ASPNETCORE_ENVIRONMENT=Development
 ENV ASPNETCORE_URLS=http://*:8001
-ENTRYPOINT ["dotnet", "Epilepsy_Health_App.APIGateway.API.dll"]
+ENTRYPOINT ["dotnet", "Epilepsy_Health_App.APIGateway.dll"]
