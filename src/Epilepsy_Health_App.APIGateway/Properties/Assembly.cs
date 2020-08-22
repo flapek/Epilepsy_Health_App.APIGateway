@@ -4,10 +4,10 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Epilepsy_Health_App.Services.APIGateway")]
+[assembly: AssemblyTitle("Epilepsy_Health_App.APIGateway")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Epilepsy_Health_App.Services.APIGateway")]
+[assembly: AssemblyProduct("Epilepsy_Health_App.APIGateway")]
 [assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
 
