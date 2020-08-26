@@ -1,0 +1,36 @@
+{
+  "GlobalConfiguration": {
+    //"RequestIdKey": "OcRequestId",
+    //"AdministrationPath": "/administration"
+  },
+  "ReRoutes": [
+    {
+      "DownstreamPathTemplate": "/api/auth?name={name}&pwd={pwd}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5001
+        }
+      ],
+      "UpstreamPathTemplate": "/api/auth?name={name}&pwd={pwd}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/weatherforecast",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5002
+        }
+      ],
+      "UpstreamPathTemplate": "/api/weatherforecast",
+      "UpstreamHttpMethod": [ "Get" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "TestKey",
+        "AllowedScopes": []
+      }
+    }
+  ]
+}
