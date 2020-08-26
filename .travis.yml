@@ -7,10 +7,10 @@ branches:
   only:
     - master
 before_script:
-  - chmod -R a+x Scripts
+  - chmod -R a+x scripts
 script:
-  - ./Scripts/build.sh
-  - ./Scripts/test.sh
+  - ./scripts/build.sh
+  - ./scripts/test.sh
 # after_success:
   # - ./Scripts/dockerize.sh
 notifications:
