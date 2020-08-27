@@ -1,6 +1,17 @@
 #!/bin/bash
-TAG=latest
-VERSION_TAG=$TRAVIS_BUILD_NUMBER
+TAG=''
+VERSION_TAG=
+
+case "$TRAVIS_BRANCH" in
+  "master")
+    TAG=latest
+    VERSION_TAG=$TRAVIS_BUILD_NUMBER
+    ;;
+  "develop")
+    TAG=dev
+    VERSION_TAG=$TAG-$TRAVIS_BUILD_NUMBER
+    ;;    
+esac
 
 REPOSITORY=$DOCKER_USERNAME/Epilepsy_Health_App.APIGateway
 
