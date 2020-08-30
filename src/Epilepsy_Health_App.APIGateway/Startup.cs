@@ -1,4 +1,5 @@
-using Convey;
+using Joint;
+using Joint.Auth;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -22,7 +23,7 @@ namespace Epilepsy_Health_App.APIGateway
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddConvey()
+            services.AddJoint()
                 .AddJwt();            
 
             services.AddOcelot();
@@ -42,7 +43,7 @@ namespace Epilepsy_Health_App.APIGateway
             {
                 endpoints.MapGet("/", async context =>
                 {
-                    await context.Response.WriteAsync("Welcome in ocelot apigateway.");
+                    await context.Response.WriteAsync("Welcome in ocelot api gateway.");
                 });
             });
 
