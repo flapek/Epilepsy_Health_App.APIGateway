@@ -9,7 +9,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{E5D8460C-C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Epilepsy_Health_App.APIGateway.Unit.Test", "test\Epilepsy_Health_App.APIGateway.Unit.Test\Epilepsy_Health_App.APIGateway.Unit.Test.csproj", "{B075DF66-2C27-4EDB-B3EB-D8D29383D5E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epilepsy_Health_App.APIGateway", "src\Epilepsy_Health_App.APIGateway\Epilepsy_Health_App.APIGateway.csproj", "{6D0FC87F-5C27-4DD4-A231-BD123F14BDE7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Epilepsy_Health_App.APIGateway", "src\Epilepsy_Health_App.APIGateway\Epilepsy_Health_App.APIGateway.csproj", "{6D0FC87F-5C27-4DD4-A231-BD123F14BDE7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Joint.Ocelot", "..\Joint.Ocelot\Joint.Ocelot\Joint.Ocelot.csproj", "{2366439D-F3B4-4DC5-B755-FDA108C2375A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +27,10 @@ Global
 		{6D0FC87F-5C27-4DD4-A231-BD123F14BDE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D0FC87F-5C27-4DD4-A231-BD123F14BDE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D0FC87F-5C27-4DD4-A231-BD123F14BDE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2366439D-F3B4-4DC5-B755-FDA108C2375A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2366439D-F3B4-4DC5-B755-FDA108C2375A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2366439D-F3B4-4DC5-B755-FDA108C2375A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2366439D-F3B4-4DC5-B755-FDA108C2375A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
