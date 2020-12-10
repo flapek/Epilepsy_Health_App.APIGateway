@@ -7,10 +7,14 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="Joint" Version="0.0.24" />
-	  <PackageReference Include="Joint.Auth" Version="0.0.24" />
-	  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.7" />
+	  <PackageReference Include="Joint" Version="0.1.160" />
+	  <PackageReference Include="Joint.Auth" Version="0.1.11" />
+	  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.10" />
 	  <PackageReference Include="Ocelot" Version="16.0.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\..\Joint.Ocelot\Joint.Ocelot\Joint.Ocelot.csproj" />
 	</ItemGroup>
 
 </Project>
