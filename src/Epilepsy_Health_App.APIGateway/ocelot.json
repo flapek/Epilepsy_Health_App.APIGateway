@@ -1,36 +1,38 @@
 {
+  "Routes": [],
+  "Aggregates": [],
   "GlobalConfiguration": {
-    //"RequestIdKey": "OcRequestId",
-    //"AdministrationPath": "/administration"
-  },
-  "ReRoutes": [
-    {
-      "DownstreamPathTemplate": "/api/auth?name={name}&pwd={pwd}",
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "localhost",
-          "Port": 5001
-        }
-      ],
-      "UpstreamPathTemplate": "/api/auth?name={name}&pwd={pwd}",
-      "UpstreamHttpMethod": [ "Get" ]
+    "RequestIdKey": null,
+    "ServiceDiscoveryProvider": {
+      "Host": "localhost",
+      "Port": 8500,
+      "Type": "Consul",
+      "Token": null,
+      "ConfigurationKey": null
     },
-    {
-      "DownstreamPathTemplate": "/api/weatherforecast",
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "localhost",
-          "Port": 5002
-        }
-      ],
-      "UpstreamPathTemplate": "/api/weatherforecast",
-      "UpstreamHttpMethod": [ "Get" ],
-      "AuthenticationOptions": {
-        "AuthenticationProviderKey": "TestKey",
-        "AllowedScopes": []
-      }
+    "RateLimitOptions": {
+      "ClientIdHeader": "ClientId",
+      "QuotaExceededMessage": null,
+      "RateLimitCounterPrefix": "ocelot",
+      "DisableRateLimitHeaders": false,
+      "HttpStatusCode": 429
+    },
+    "QoSOptions": {
+      "ExceptionsAllowedBeforeBreaking": 0,
+      "DurationOfBreak": 0,
+      "TimeoutValue": 0
+    },
+    "BaseUrl": null,
+    "LoadBalancerOptions": {
+      "Type": "LeastConnection",
+      "Key": null,
+      "Expiry": 0
+    },
+    "DownstreamScheme": "http",
+    "HttpHandlerOptions": {
+      "AllowAutoRedirect": false,
+      "UseCookieContainer": false,
+      "UseTracing": false
     }
-  ]
+  }
 }
